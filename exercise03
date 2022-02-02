@@ -1,0 +1,14 @@
+
+arg_1 = int(input("Введите первое число: "))
+arg_2 = int(input("Введите второе число: "))
+arg_3 = int(input("Введите третье число: "))
+
+def my_func(a, b, c):
+    if a < b and a < c:
+        return b + c
+    elif b < a and b < c:
+        return a + c
+    else:
+        return a + b
+
+print(my_func(arg_1, arg_2, arg_3))
