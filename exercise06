@@ -1,0 +1,11 @@
+def int_func(word_1):
+    print(word_1.title())
+
+
+word_2 = input("Введите слово латиницей: ")
+int_func(word_2)
+
+new_line = input("Введите несколько слов с маленькой буквы через пробел: ").split()
+
+for i in new_line:
+    int_func(i)
