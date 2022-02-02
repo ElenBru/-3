@@ -1,0 +1,10 @@
+a = int(input("Введите первый аргумент: "))
+b = int(input("Введите второй аргмент: "))
+
+def calculate(arg_1, arg_2):
+    try:
+        return arg_1/arg_2
+    except ZeroDivisionError:
+        return "Деление на 0 невозможно"
+
+print(round(calculate(a, b), 2))
